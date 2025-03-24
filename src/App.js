@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Container, Typography } from "@mui/material";
+import VideoUpload from "./components/videoUpload";
+import ExtractAudio from "./components/ExtractAudio";
 
 function App() {
+  const [uploadedVideos, setUploadedVideos] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="md" sx={{ mt: 5 }}>
+      <Typography variant="h4" gutterBottom>
+        Browser-Based Conversation Video Editor
+      </Typography>
+      <VideoUpload onFilesSelected={setUploadedVideos} />
+      <ExtractAudio videos={uploadedVideos} />
+    </Container>
   );
 }
 
