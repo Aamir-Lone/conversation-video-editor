@@ -1,220 +1,4 @@
-// // // import React, { useState } from "react";
-// // // import { Container, Typography } from "@mui/material";
-// // // import VideoUpload from "./components/videoUpload";
-// // // // import ExtractAudio from "./components/ExtractAudio";
 
-// // // function App() {
-// // //   // const [uploadedVideos, setUploadedVideos] = useState([]);
-
-// // //   return (
-// // //     <Container maxWidth="md" sx={{ mt: 5 }}>
-// // //       <Typography variant="h4" gutterBottom>
-// // //         Browser-Based Conversation Video Editor
-// // //       </Typography>
-// // //       <VideoUpload onFilesSelected={setUploadedVideos} />
-// // //       {/* <ExtractAudio videos={uploadedVideos} /> */}
-// // //     </Container>
-// // //   );
-// // // }
-
-// // // export default App;
-// // // import React, { useState } from "react";
-// // // import VideoUpload from "./components/videoUpload";
-
-// // // function App() {
-// // //   const [videos, setVideos] = useState([]);
-
-// // //   return (
-// // //     <div>
-// // //       <h1>Conversation Video Editor</h1>
-// // //       <VideoUpload videos={videos} setVideos={setVideos} />
-// // //     </div>
-// // //   );
-// // // }
-
-// // // export default App;
-// // ///****************************************** */
-// // import React, { useState } from "react";
-// // import VideoUpload from "./components/videoUpload";
-// // import ExtractAudio from "./components/ExtractAudio";
-
-// // function App() {
-// //   const [videos, setVideos] = useState([]);
-// //   const [processing, setProcessing] = useState(false);
-// //   const [audioUrls, setAudioUrls] = useState([]);
-
-// //   const processVideos = async () => {
-// //     if (videos.length !== 2) {
-// //       alert("Please upload exactly two videos.");
-// //       return;
-// //     }
-
-// //     setProcessing(true);
-// //     const audio1 = await ExtractAudio(videos[0]);
-// //     const audio2 = await ExtractAudio(videos[1]);
-
-// //     if (audio1 && audio2) {
-// //       setAudioUrls([audio1, audio2]);
-// //     } else {
-// //       alert("Audio extraction failed.");
-// //     }
-// //     setProcessing(false);
-// //   };
-
-// //   return (
-// //     <div style={{ textAlign: "center", padding: "20px" }}>
-// //       <h1>Conversation Video Editor</h1>
-// //       <VideoUpload videos={videos} setVideos={setVideos} />
-
-// //       {videos.length === 2 && (
-// //         <button onClick={processVideos} disabled={processing} style={{ marginTop: "20px", padding: "10px 20px" }}>
-// //           {processing ? "Processing..." : "Process Video"}
-// //         </button>
-// //       )}
-
-// //       {audioUrls.length > 0 && (
-// //         <div>
-// //           <h3>Extracted Audio</h3>
-// //           {audioUrls.map((url, index) => (
-// //             <audio key={index} controls>
-// //               <source src={url} type="audio/wav" />
-// //               Your browser does not support the audio element.
-// //             </audio>
-// //           ))}
-// //         </div>
-// //       )}
-// //     </div>
-// //   );
-// // }
-
-// // export default App;
-// //*************************************8 */
-// import React, { useState } from "react";
-// import VideoUpload from "./components/videoUpload";
-// import { extractAudio } from "./components/ExtractAudio"; // Import function
-
-// function App() {
-//   const [videos, setVideos] = useState([]);
-//   const [processing, setProcessing] = useState(false);
-//   const [audioUrls, setAudioUrls] = useState([]);
-
-//   const processVideos = async () => {
-//     if (videos.length !== 2) {
-//       alert("Please upload exactly two videos.");
-//       return;
-//     }
-
-//     setProcessing(true);
-
-//     const audio1 = await extractAudio(videos[0]); // Call function properly
-//     const audio2 = await extractAudio(videos[1]);
-
-//     if (audio1 && audio2) {
-//       setAudioUrls([audio1, audio2]);
-//     } else {
-//       alert("Audio extraction failed.");
-//     }
-    
-//     setProcessing(false);
-//   };
-
-//   return (
-//     <div style={{ textAlign: "center", padding: "20px" }}>
-//       <h1>Conversation Video Editor</h1>
-//       <VideoUpload videos={videos} setVideos={setVideos} />
-
-//       {videos.length === 2 && (
-//         <button onClick={processVideos} disabled={processing} style={{ marginTop: "20px", padding: "10px 20px" }}>
-//           {processing ? "Processing..." : "Process Video"}
-//         </button>
-//       )}
-
-//       {audioUrls.length > 0 && (
-//         <div>
-//           <h3>Extracted Audio</h3>
-//           {audioUrls.map((url, index) => (
-//             <audio key={index} controls>
-//               <source src={url} type="audio/wav" />
-//               Your browser does not support the audio element.
-//             </audio>
-//           ))}
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default App;
-//***************************************************** */
-// import React, { useState } from "react";
-// import VideoUpload from "./components/videoUpload";
-// import { extractAudio } from "./components/ExtractAudio";
-// import { transcribeAudio } from "./utils/TranscribeAudio"; // Import transcription function
-
-// function App() {
-//   const [videos, setVideos] = useState([]);
-//   const [processing, setProcessing] = useState(false);
-//   const [audioUrls, setAudioUrls] = useState([]);
-//   const [transcriptions, setTranscriptions] = useState([]);
-
-//   const processVideos = async () => {
-//     if (videos.length !== 2) {
-//       alert("Please upload exactly two videos.");
-//       return;
-//     }
-
-//     setProcessing(true);
-//     setTranscriptions([]); // Reset previous transcriptions
-
-//     const audio1 = await extractAudio(videos[0]);
-//     const audio2 = await extractAudio(videos[1]);
-
-//     if (audio1 && audio2) {
-//       setAudioUrls([audio1, audio2]);
-
-//       // Transcribe the audio clips
-//       const text1 = await transcribeAudio(audio1);
-//       const text2 = await transcribeAudio(audio2);
-
-//       setTranscriptions([text1, text2]);
-//     } else {
-//       alert("Audio extraction failed.");
-//     }
-
-//     setProcessing(false);
-//   };
-
-//   return (
-//     <div style={{ textAlign: "center", padding: "20px" }}>
-//       <h1>Conversation Video Editor</h1>
-//       <VideoUpload videos={videos} setVideos={setVideos} />
-
-//       {videos.length === 2 && (
-//         <button onClick={processVideos} disabled={processing} style={{ marginTop: "20px", padding: "10px 20px" }}>
-//           {processing ? "Processing..." : "Process Video"}
-//         </button>
-//       )}
-
-//       {audioUrls.length > 0 && (
-//         <div>
-//           <h3>Extracted Audio</h3>
-//           {audioUrls.map((url, index) => (
-//             <div key={index}>
-//               <audio controls>
-//                 <source src={url} type="audio/wav" />
-//                 Your browser does not support the audio element.
-//               </audio>
-//               <p><strong>Transcription:</strong> {transcriptions[index] || "Transcribing..."}</p>
-//             </div>
-//           ))}
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default App;
-//************************************************************************************** */
 
 // import React, { useState } from "react";
 // import VideoUpload from "./components/videoUpload";
@@ -234,7 +18,7 @@
 //     }
 
 //     setProcessing(true);
-//     setTranscriptions([]); 
+//     setTranscriptions([]);
 
 //     const audio1 = await extractAudio(videos[0]);
 //     const audio2 = await extractAudio(videos[1]);
@@ -243,8 +27,12 @@
 //       setAudioBlobs([audio1, audio2]);
 
 //       // Transcribe the extracted audio blobs
-//       const text1 = await transcribeAudio(audio1);
-//       const text2 = await transcribeAudio(audio2);
+//       const response1 = await transcribeAudio(audio1);
+//       const response2 = await transcribeAudio(audio2);
+
+//       // Extract text safely
+//       const text1 = response1?.results?.channels[0]?.alternatives[0]?.transcript || "Transcription failed.";
+//       const text2 = response2?.results?.channels[0]?.alternatives[0]?.transcript || "Transcription failed.";
 
 //       setTranscriptions([text1, text2]);
 //     } else {
@@ -284,19 +72,142 @@
 // }
 
 // export default App;
+//****************************************************************************************************************** */
+
+//code to store audio files and transcript in index db
 
 
+// import React, { useState, useEffect } from "react";
+// import VideoUpload from "./components/videoUpload";
+// import { extractAudio } from "./components/ExtractAudio";
+// import { transcribeAudio } from "./utils/TranscribeAudio";
+// import { saveAudio, saveTranscription, getAudio, getTranscription } from "./utils/db";
 
-import React, { useState } from "react";
+// function App() {
+//   const [videos, setVideos] = useState([]);
+//   const [processing, setProcessing] = useState(false);
+//   const [audioBlobs, setAudioBlobs] = useState([]);
+//   const [transcriptions, setTranscriptions] = useState([]);
+
+//   // Load stored data from IndexedDB on mount
+//   useEffect(() => {
+//     const loadStoredData = async () => {
+//       const audio1 = await getAudio("audio1");
+//       const audio2 = await getAudio("audio2");
+//       const text1 = await getTranscription("transcription1");
+//       const text2 = await getTranscription("transcription2");
+
+//       if (audio1 && audio2) {
+//         setAudioBlobs([audio1, audio2]);
+//       }
+//       if (text1 && text2) {
+//         setTranscriptions([text1, text2]);
+//       }
+//     };
+
+//     loadStoredData();
+//   }, []);
+
+//   const processVideos = async () => {
+//     if (videos.length !== 2) {
+//       alert("Please upload exactly two videos.");
+//       return;
+//     }
+
+//     setProcessing(true);
+//     setTranscriptions([]); 
+
+//     const audio1 = await extractAudio(videos[0]);
+//     const audio2 = await extractAudio(videos[1]);
+
+//     if (audio1 && audio2) {
+//       setAudioBlobs([audio1, audio2]);
+
+//       // Save audio blobs to IndexedDB
+//       await saveAudio("audio1", audio1);
+//       await saveAudio("audio2", audio2);
+
+//       // Transcribe the extracted audio blobs
+//       const text1 = await transcribeAudio(audio1);
+//       const text2 = await transcribeAudio(audio2);
+
+//       setTranscriptions([text1, text2]);
+
+//       // Save transcriptions to IndexedDB
+//       await saveTranscription("transcription1", text1);
+//       await saveTranscription("transcription2", text2);
+//     } else {
+//       alert("Audio extraction failed.");
+//     }
+
+//     setProcessing(false);
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "20px" }}>
+//       <h1>Conversation Video Editor</h1>
+//       <VideoUpload videos={videos} setVideos={setVideos} />
+
+//       {videos.length === 2 && (
+//         <button onClick={processVideos} disabled={processing} style={{ marginTop: "20px", padding: "10px 20px" }}>
+//           {processing ? "Processing..." : "Process Video"}
+//         </button>
+//       )}
+
+//       {audioBlobs.length > 0 && (
+//         <div>
+//           <h3>Extracted Audio</h3>
+//           {audioBlobs.map((blob, index) => (
+//             <div key={index}>
+//               <audio controls>
+//                 <source src={URL.createObjectURL(blob)} type="audio/wav" />
+//                 Your browser does not support the audio element.
+//               </audio>
+//               <p><strong>Transcription:</strong> {transcriptions[index] || "Transcribing..."}</p>
+//             </div>
+//           ))}
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+//8************************************************************************************************
+
+
+import React, { useState, useEffect } from "react";
 import VideoUpload from "./components/videoUpload";
 import { extractAudio } from "./components/ExtractAudio";
 import { transcribeAudio } from "./utils/TranscribeAudio";
+import { saveAudio, saveTranscription, getAudio, getTranscription } from "./utils/db";
 
 function App() {
   const [videos, setVideos] = useState([]);
   const [processing, setProcessing] = useState(false);
   const [audioBlobs, setAudioBlobs] = useState([]);
   const [transcriptions, setTranscriptions] = useState([]);
+  const [statuses, setStatuses] = useState([]); // Status messages for each transcription
+
+  // Load stored data from IndexedDB on mount
+  useEffect(() => {
+    const loadStoredData = async () => {
+      const audio1 = await getAudio("audio1");
+      const audio2 = await getAudio("audio2");
+      const text1 = await getTranscription("transcription1");
+      const text2 = await getTranscription("transcription2");
+
+      if (audio1 && audio2) {
+        setAudioBlobs([audio1, audio2]);
+      }
+      if (text1 && text2) {
+        setTranscriptions([text1, text2]);
+        setStatuses(["✅ Transcription Successful", "✅ Transcription Successful"]);
+      }
+    };
+
+    loadStoredData();
+  }, []);
 
   const processVideos = async () => {
     if (videos.length !== 2) {
@@ -305,7 +216,8 @@ function App() {
     }
 
     setProcessing(true);
-    setTranscriptions([]);
+    setTranscriptions([]); 
+    setStatuses(["Transcribing...", "Transcribing..."]);
 
     const audio1 = await extractAudio(videos[0]);
     const audio2 = await extractAudio(videos[1]);
@@ -313,15 +225,32 @@ function App() {
     if (audio1 && audio2) {
       setAudioBlobs([audio1, audio2]);
 
+      // Save audio blobs to IndexedDB
+      await saveAudio("audio1", audio1);
+      await saveAudio("audio2", audio2);
+
       // Transcribe the extracted audio blobs
-      const response1 = await transcribeAudio(audio1);
-      const response2 = await transcribeAudio(audio2);
+      const result1 = await transcribeAudio(audio1);
+      const result2 = await transcribeAudio(audio2);
 
-      // Extract text safely
-      const text1 = response1?.results?.channels[0]?.alternatives[0]?.transcript || "Transcription failed.";
-      const text2 = response2?.results?.channels[0]?.alternatives[0]?.transcript || "Transcription failed.";
+      // Handle transcription results
+      if (result1.error) {
+        setTranscriptions((prev) => [...prev, "❌ Transcription Failed"]);
+        setStatuses((prev) => [...prev, "❌ Transcription Failed"]);
+      } else {
+        setTranscriptions((prev) => [...prev, result1.transcriptText]);
+        setStatuses((prev) => [...prev, "✅ Transcription Successful"]);
+        await saveTranscription("transcription1", result1.transcriptText);
+      }
 
-      setTranscriptions([text1, text2]);
+      if (result2.error) {
+        setTranscriptions((prev) => [...prev, "❌ Transcription Failed"]);
+        setStatuses((prev) => [...prev, "❌ Transcription Failed"]);
+      } else {
+        setTranscriptions((prev) => [...prev, result2.transcriptText]);
+        setStatuses((prev) => [...prev, "✅ Transcription Successful"]);
+        await saveTranscription("transcription2", result2.transcriptText);
+      }
     } else {
       alert("Audio extraction failed.");
     }
@@ -349,7 +278,8 @@ function App() {
                 <source src={URL.createObjectURL(blob)} type="audio/wav" />
                 Your browser does not support the audio element.
               </audio>
-              <p><strong>Transcription:</strong> {transcriptions[index] || "Transcribing..."}</p>
+              <p><strong>Status:</strong> {statuses[index] || "Transcribing..."}</p>
+              <p><strong>Transcription:</strong> {transcriptions[index] || "Waiting for transcription..."}</p>
             </div>
           ))}
         </div>

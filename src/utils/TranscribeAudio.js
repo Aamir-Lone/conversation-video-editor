@@ -1,85 +1,3 @@
-// import { createClient } from "@deepgram/sdk";
-
-// const DEEPGRAM_API_KEY = process.env.REACT_APP_DEEPGRAM_API_KEY;
-
-// console.log("Deepgram API Key:", DEEPGRAM_API_KEY);
-
-
-// if (!DEEPGRAM_API_KEY) {
-//   throw new Error("🚨 Deepgram API key is missing! Check your .env file.");
-// }
-
-// // ✅ Use the correct initialization method for Deepgram v3
-// const deepgram = createClient(DEEPGRAM_API_KEY);
-
-// export const transcribeAudio = async (audioBlob) => {
-//   try {
-//     console.log("🔄 Fetching audio file for transcription...");
-
-//     // Convert Blob to ArrayBuffer
-//     const audioBuffer = await audioBlob.arrayBuffer();
-
-//     // ✅ Use Deepgram v3 API format
-//     const response = await deepgram.listen.prerecorded.transcribe(
-//       {
-//         buffer: audioBuffer,
-//         mimetype: "audio/wav",
-//       },
-//       {
-//         model: "whisper",
-//         smart_format: true,
-//       }
-//     );
-
-//     if (!response || !response.results) {
-//       throw new Error("❌ Invalid transcription response.");
-//     }
-
-//     console.log("✅ Transcription successful:", response.results);
-//     return response.results;
-//   } catch (error) {
-//     console.error("❌ Deepgram Transcription Error:", error);
-//     return null;
-//   }
-// };
-//************************************************************************************************** */
-
-// export const transcribeAudio = async (audioBlob) => {
-//     try {
-//       console.log("🔄 Fetching audio file for transcription...");
-  
-//       // Convert Blob to Base64
-//       const reader = new FileReader();
-//       reader.readAsDataURL(audioBlob);
-  
-//       const audioBase64 = await new Promise((resolve) => {
-//         reader.onloadend = () => resolve(reader.result);
-//       });
-  
-//       // ✅ Send to your proxy server instead of Deepgram API
-//       const response = await fetch("http://localhost:5000/transcribe", {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({ audio: audioBase64 }),
-//       });
-  
-//       const data = await response.json();
-  
-//       if (!data || !data.results) {
-//         throw new Error("❌ Invalid transcription response.");
-//       }
-  
-//       console.log("✅ Transcription successful:", data.results);
-//       return data.results;
-//     } catch (error) {
-//       console.error("❌ Transcription Error:", error);
-//       return null;
-//     }
-//   };
-  
-
 
 
 // export const transcribeAudio = async (audioBlob) => {
@@ -104,42 +22,67 @@
   
 //       const data = await response.json();
 //       console.log("✅ Deepgram Transcription:", data);
-//       return data;
+      
+//       return data; // Return full response for processing in App.js
 //     } catch (error) {
 //       console.error("❌ Transcription Error:", error);
 //       return null;
 //     }
 //   };
-  
+  //***************************************************************** */
 
-
-export const transcribeAudio = async (audioBlob) => {
+  export const transcribeAudio = async (audioBlob) => {
     console.log("🔄 Fetching audio file for transcription...");
   
-    // Save the extracted audio to test it manually
+    // Create a temporary URL for debugging
     const audioURL = URL.createObjectURL(audioBlob);
     console.log("🎵 Extracted Audio URL:", audioURL);
-    
+  
+    // Prepare FormData
     const formData = new FormData();
     formData.append("audio", audioBlob, "audio.wav");
   
     try {
+      // Send request to backend
       const response = await fetch("http://localhost:5000/transcribe", {
         method: "POST",
         body: formData,
       });
   
       if (!response.ok) {
-        throw new Error("❌ Failed to get transcription.");
+        throw new Error(`❌ Failed to get transcription. Status: ${response.status}`);
       }
   
       const data = await response.json();
-      console.log("✅ Deepgram Transcription:", data);
-      
-      return data; // Return full response for processing in App.js
+      console.log("✅ Full Transcription Response:", data);
+  
+      // Validate if transcription exists in response
+      if (!data.transcription || !data.transcription.results) {
+        console.error("❌ Unexpected transcription format:", data);
+        return { error: "Invalid transcription response" };
+      }
+  
+      // Extract transcript text from Deepgram API response
+      const transcriptText = data.transcription.results.channels?.[0]?.alternatives?.[0]?.transcript || "";
+  
+      if (!transcriptText) {
+        console.warn("⚠️ No transcription text found in response.");
+        return { error: "No transcription found" };
+      }
+  
+      console.log("📝 Extracted Transcription:", transcriptText);
+  
+      // ✅ Return structured data including transcription
+      return {
+        success: true,
+        transcriptText,
+        audioPath: data.audioPath,
+        transcriptPath: data.transcriptPath,
+      };
+  
     } catch (error) {
-      console.error("❌ Transcription Error:", error);
-      return null;
+      console.error("❌ Transcription Error:", error.message);
+      return { error: error.message };
     }
   };
   
