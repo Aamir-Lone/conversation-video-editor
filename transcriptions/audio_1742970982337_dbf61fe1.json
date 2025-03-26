@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "transaction_key": "deprecated",
+    "request_id": "cfd74a78-b481-4578-8391-ed347e37863a",
+    "sha256": "2d390bf15c9c8dd8f55072d143a3db347ed54927bbf92766decde9d67028f3a6",
+    "created": "2025-03-26T06:36:27.800Z",
+    "duration": 60.023563,
+    "channels": 1,
+    "models": [
+      "aa274f3c-e8b3-456a-ac08-dfd797d45514"
+    ],
+    "model_info": {
+      "aa274f3c-e8b3-456a-ac08-dfd797d45514": {
+        "name": "general-nova",
+        "version": "2023-07-06.22746",
+        "arch": "nova"
+      }
+    }
+  },
+  "results": {
+    "channels": [
+      {
+        "alternatives": [
+          {
+            "transcript": "Good. Yeah. No problem. Wonderful. No problem. Yeah. And I'm sorry for the the internet mess up. Actually, while we were talking, I went in",
+            "confidence": 0.98200977,
+            "words": [
+              {
+                "word": "good",
+                "start": 0.16,
+                "end": 0.65999997,
+                "confidence": 0.9223706,
+                "punctuated_word": "Good."
+              },
+              {
+                "word": "yeah",
+                "start": 16.775,
+                "end": 17.275,
+                "confidence": 0.92356175,
+                "punctuated_word": "Yeah."
+              },
+              {
+                "word": "no",
+                "start": 17.735,
+                "end": 17.974998,
+                "confidence": 0.9968113,
+                "punctuated_word": "No"
+              },
+              {
+                "word": "problem",
+                "start": 17.974998,
+                "end": 18.474998,
+                "confidence": 0.994588,
+                "punctuated_word": "problem."
+              },
+              {
+                "word": "wonderful",
+                "start": 51.15856,
+                "end": 51.65856,
+                "confidence": 0.94352734,
+                "punctuated_word": "Wonderful."
+              },
+              {
+                "word": "no",
+                "start": 54.758564,
+                "end": 54.918564,
+                "confidence": 0.83058244,
+                "punctuated_word": "No"
+              },
+              {
+                "word": "problem",
+                "start": 54.918564,
+                "end": 55.418564,
+                "confidence": 0.9913488,
+                "punctuated_word": "problem."
+              },
+              {
+                "word": "yeah",
+                "start": 55.47856,
+                "end": 55.718563,
+                "confidence": 0.88061863,
+                "punctuated_word": "Yeah."
+              },
+              {
+                "word": "and",
+                "start": 55.718563,
+                "end": 55.878563,
+                "confidence": 0.9904146,
+                "punctuated_word": "And"
+              },
+              {
+                "word": "i'm",
+                "start": 55.878563,
+                "end": 56.038563,
+                "confidence": 0.9987416,
+                "punctuated_word": "I'm"
+              },
+              {
+                "word": "sorry",
+                "start": 56.038563,
+                "end": 56.358562,
+                "confidence": 0.9999263,
+                "punctuated_word": "sorry"
+              },
+              {
+                "word": "for",
+                "start": 56.358562,
+                "end": 56.598564,
+                "confidence": 0.9983002,
+                "punctuated_word": "for"
+              },
+              {
+                "word": "the",
+                "start": 56.598564,
+                "end": 57.078564,
+                "confidence": 0.9996927,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "the",
+                "start": 57.078564,
+                "end": 57.31856,
+                "confidence": 0.8712792,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "internet",
+                "start": 57.31856,
+                "end": 57.81856,
+                "confidence": 0.8275204,
+                "punctuated_word": "internet"
+              },
+              {
+                "word": "mess",
+                "start": 57.878563,
+                "end": 58.11856,
+                "confidence": 0.49921286,
+                "punctuated_word": "mess"
+              },
+              {
+                "word": "up",
+                "start": 58.11856,
+                "end": 58.278564,
+                "confidence": 0.9810399,
+                "punctuated_word": "up."
+              },
+              {
+                "word": "actually",
+                "start": 58.278564,
+                "end": 58.678562,
+                "confidence": 0.97324514,
+                "punctuated_word": "Actually,"
+              },
+              {
+                "word": "while",
+                "start": 58.678562,
+                "end": 58.918564,
+                "confidence": 0.9991717,
+                "punctuated_word": "while"
+              },
+              {
+                "word": "we",
+                "start": 58.918564,
+                "end": 58.99856,
+                "confidence": 0.99944955,
+                "punctuated_word": "we"
+              },
+              {
+                "word": "were",
+                "start": 58.99856,
+                "end": 59.238564,
+                "confidence": 0.99814856,
+                "punctuated_word": "were"
+              },
+              {
+                "word": "talking",
+                "start": 59.238564,
+                "end": 59.558563,
+                "confidence": 0.94998395,
+                "punctuated_word": "talking,"
+              },
+              {
+                "word": "i",
+                "start": 59.558563,
+                "end": 59.63856,
+                "confidence": 0.98200977,
+                "punctuated_word": "I"
+              },
+              {
+                "word": "went",
+                "start": 59.63856,
+                "end": 59.878563,
+                "confidence": 0.99896646,
+                "punctuated_word": "went"
+              },
+              {
+                "word": "in",
+                "start": 59.878563,
+                "end": 60.023563,
+                "confidence": 0.8923241,
+                "punctuated_word": "in"
+              }
+            ],
+            "paragraphs": {
+              "transcript": "\nGood. Yeah. No problem. Wonderful. No problem.\n\nYeah. And I'm sorry for the the internet mess up. Actually, while we were talking, I went in",
+              "paragraphs": [
+                {
+                  "sentences": [
+                    {
+                      "text": "Good.",
+                      "start": 0.16,
+                      "end": 0.65999997
+                    },
+                    {
+                      "text": "Yeah.",
+                      "start": 16.775,
+                      "end": 17.275
+                    },
+                    {
+                      "text": "No problem.",
+                      "start": 17.735,
+                      "end": 18.474998
+                    },
+                    {
+                      "text": "Wonderful.",
+                      "start": 51.15856,
+                      "end": 51.65856
+                    },
+                    {
+                      "text": "No problem.",
+                      "start": 54.758564,
+                      "end": 55.418564
+                    }
+                  ],
+                  "num_words": 7,
+                  "start": 0.16,
+                  "end": 55.418564
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Yeah.",
+                      "start": 55.47856,
+                      "end": 55.718563
+                    },
+                    {
+                      "text": "And I'm sorry for the the internet mess up.",
+                      "start": 55.718563,
+                      "end": 58.278564
+                    },
+                    {
+                      "text": "Actually, while we were talking, I went in",
+                      "start": 58.278564,
+                      "end": 60.023563
+                    }
+                  ],
+                  "num_words": 18,
+                  "start": 55.47856,
+                  "end": 60.023563
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
