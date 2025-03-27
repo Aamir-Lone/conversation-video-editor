@@ -1,9 +1,9 @@
 {
   "metadata": {
     "transaction_key": "deprecated",
-    "request_id": "26c41389-cf97-4e29-843a-dd32918149c8",
+    "request_id": "330e21ea-5873-4d81-beed-6c15c45780f4",
     "sha256": "d527e1a6c58467be0df1644427e639da1ef91ee59c5f7e0e359b53131336097d",
-    "created": "2025-03-26T06:36:31.740Z",
+    "created": "2025-03-26T17:02:37.096Z",
     "duration": 60.023563,
     "channels": 1,
     "models": [
@@ -22,376 +22,299 @@
       {
         "alternatives": [
           {
-            "transcript": "Oh, just a second. Just a second. Yeah. No tagged up with it in a what couple of shades. No. What do you have pleasure? Sure. Okay. It's a solution. Taklutschen. Okay. Cool. Seems like we are good to go. Yeah. Fantastic. Well, Aditya, thanks for joining. How are you doing?",
-            "confidence": 0.9400168,
+            "transcript": "Oh, just a second. Just a second. Yeah. No. What do you have pleasure? Sure. Okay. It's a solution. Taklutschen. Okay. Cool. Seems like we are good to go. Yeah. Fantastic. Well, Aditya, thanks for joining. How are you doing?",
+            "confidence": 0.9462939,
             "words": [
               {
                 "word": "oh",
                 "start": 0.56,
                 "end": 1.06,
-                "confidence": 0.7823882,
+                "confidence": 0.77978206,
                 "punctuated_word": "Oh,"
               },
               {
                 "word": "just",
                 "start": 4.16,
                 "end": 4.56,
-                "confidence": 0.9511081,
+                "confidence": 0.9516437,
                 "punctuated_word": "just"
               },
               {
                 "word": "a",
                 "start": 4.56,
-                "end": 4.81,
-                "confidence": 0.99719703,
+                "end": 4.72,
+                "confidence": 0.99698925,
                 "punctuated_word": "a"
               },
               {
                 "word": "second",
-                "start": 4.81,
-                "end": 5.31,
-                "confidence": 0.9764577,
+                "start": 4.72,
+                "end": 5.22,
+                "confidence": 0.9756886,
                 "punctuated_word": "second."
               },
               {
                 "word": "just",
                 "start": 15.775001,
                 "end": 16.015,
-                "confidence": 0.8902579,
+                "confidence": 0.89327854,
                 "punctuated_word": "Just"
               },
               {
                 "word": "a",
                 "start": 16.015,
                 "end": 16.095001,
-                "confidence": 0.9887229,
+                "confidence": 0.9886301,
                 "punctuated_word": "a"
               },
               {
                 "word": "second",
                 "start": 16.095001,
                 "end": 16.595001,
-                "confidence": 0.9059981,
+                "confidence": 0.90667087,
                 "punctuated_word": "second."
               },
               {
                 "word": "yeah",
-                "start": 28.04,
-                "end": 28.28,
-                "confidence": 0.50369686,
+                "start": 28.12,
+                "end": 28.62,
+                "confidence": 0.5059201,
                 "punctuated_word": "Yeah."
-              },
-              {
-                "word": "no",
-                "start": 28.28,
-                "end": 28.36,
-                "confidence": 0.11858179,
-                "punctuated_word": "No"
-              },
-              {
-                "word": "tagged",
-                "start": 28.36,
-                "end": 28.68,
-                "confidence": 0.20717376,
-                "punctuated_word": "tagged"
-              },
-              {
-                "word": "up",
-                "start": 28.68,
-                "end": 28.76,
-                "confidence": 0.9340077,
-                "punctuated_word": "up"
-              },
-              {
-                "word": "with",
-                "start": 28.76,
-                "end": 29,
-                "confidence": 0.8913744,
-                "punctuated_word": "with"
-              },
-              {
-                "word": "it",
-                "start": 29,
-                "end": 29.08,
-                "confidence": 0.9400168,
-                "punctuated_word": "it"
-              },
-              {
-                "word": "in",
-                "start": 29.08,
-                "end": 29.2,
-                "confidence": 0.40249068,
-                "punctuated_word": "in"
-              },
-              {
-                "word": "a",
-                "start": 29.2,
-                "end": 29.32,
-                "confidence": 0.97810054,
-                "punctuated_word": "a"
-              },
-              {
-                "word": "what",
-                "start": 29.32,
-                "end": 29.56,
-                "confidence": 0.10542561,
-                "punctuated_word": "what"
-              },
-              {
-                "word": "couple",
-                "start": 29.56,
-                "end": 29.96,
-                "confidence": 0.9926608,
-                "punctuated_word": "couple"
-              },
-              {
-                "word": "of",
-                "start": 29.96,
-                "end": 30.21,
-                "confidence": 0.9856225,
-                "punctuated_word": "of"
-              },
-              {
-                "word": "shades",
-                "start": 30.21,
-                "end": 30.71,
-                "confidence": 0.77762187,
-                "punctuated_word": "shades."
               },
               {
                 "word": "no",
                 "start": 40.165,
                 "end": 40.405003,
-                "confidence": 0.42832762,
+                "confidence": 0.4331215,
                 "punctuated_word": "No."
               },
               {
                 "word": "what",
                 "start": 40.405003,
                 "end": 40.565002,
-                "confidence": 0.81595635,
+                "confidence": 0.8215005,
                 "punctuated_word": "What"
               },
               {
                 "word": "do",
                 "start": 40.565002,
                 "end": 40.645,
-                "confidence": 0.2811297,
+                "confidence": 0.27119365,
                 "punctuated_word": "do"
               },
               {
                 "word": "you",
                 "start": 40.645,
                 "end": 40.725002,
-                "confidence": 0.9861034,
+                "confidence": 0.9858256,
                 "punctuated_word": "you"
               },
               {
                 "word": "have",
                 "start": 40.725002,
                 "end": 40.965,
-                "confidence": 0.9961966,
+                "confidence": 0.99601376,
                 "punctuated_word": "have"
               },
               {
                 "word": "pleasure",
                 "start": 40.965,
                 "end": 41.445,
-                "confidence": 0.583208,
+                "confidence": 0.58371925,
                 "punctuated_word": "pleasure?"
               },
               {
                 "word": "sure",
                 "start": 41.445,
-                "end": 41.845,
-                "confidence": 0.5904672,
+                "end": 41.765003,
+                "confidence": 0.5918434,
                 "punctuated_word": "Sure."
               },
               {
                 "word": "okay",
-                "start": 41.845,
+                "start": 41.765003,
                 "end": 42.005,
-                "confidence": 0.8677123,
+                "confidence": 0.87446743,
                 "punctuated_word": "Okay."
               },
               {
                 "word": "it's",
                 "start": 42.005,
                 "end": 42.485,
-                "confidence": 0.8903302,
+                "confidence": 0.90038383,
                 "punctuated_word": "It's"
               },
               {
                 "word": "a",
                 "start": 42.485,
                 "end": 42.885002,
-                "confidence": 0.18216981,
+                "confidence": 0.179216,
                 "punctuated_word": "a"
               },
               {
                 "word": "solution",
                 "start": 42.885002,
                 "end": 43.385002,
-                "confidence": 0.5400401,
+                "confidence": 0.53140867,
                 "punctuated_word": "solution."
               },
               {
                 "word": "taklutschen",
                 "start": 44.725002,
                 "end": 45.225002,
-                "confidence": 0.7118671,
+                "confidence": 0.7081292,
                 "punctuated_word": "Taklutschen."
               },
               {
                 "word": "okay",
                 "start": 47.125,
                 "end": 47.605003,
-                "confidence": 0.9616412,
+                "confidence": 0.9617665,
                 "punctuated_word": "Okay."
               },
               {
                 "word": "cool",
                 "start": 47.605003,
                 "end": 47.845,
-                "confidence": 0.9674305,
+                "confidence": 0.9669903,
                 "punctuated_word": "Cool."
               },
               {
                 "word": "seems",
                 "start": 48.245003,
                 "end": 48.565002,
-                "confidence": 0.9028551,
+                "confidence": 0.9045899,
                 "punctuated_word": "Seems"
               },
               {
                 "word": "like",
                 "start": 48.565002,
                 "end": 48.725002,
-                "confidence": 0.9964251,
+                "confidence": 0.9963586,
                 "punctuated_word": "like"
               },
               {
                 "word": "we",
                 "start": 48.725002,
                 "end": 48.885002,
-                "confidence": 0.9960938,
+                "confidence": 0.9960472,
                 "punctuated_word": "we"
               },
               {
                 "word": "are",
                 "start": 48.885002,
                 "end": 49.045002,
-                "confidence": 0.9425454,
+                "confidence": 0.943164,
                 "punctuated_word": "are"
               },
               {
                 "word": "good",
                 "start": 49.045002,
                 "end": 49.205,
-                "confidence": 0.9987161,
+                "confidence": 0.998755,
                 "punctuated_word": "good"
               },
               {
                 "word": "to",
                 "start": 49.205,
                 "end": 49.285004,
-                "confidence": 0.99946624,
+                "confidence": 0.9995109,
                 "punctuated_word": "to"
               },
               {
                 "word": "go",
                 "start": 49.285004,
                 "end": 49.785004,
-                "confidence": 0.9661734,
+                "confidence": 0.9462939,
                 "punctuated_word": "go."
               },
               {
                 "word": "yeah",
                 "start": 52.2085,
-                "end": 52.2885,
-                "confidence": 0.78724074,
+                "end": 52.6085,
+                "confidence": 0.7959732,
                 "punctuated_word": "Yeah."
               },
               {
                 "word": "fantastic",
-                "start": 52.2885,
-                "end": 52.7885,
-                "confidence": 0.9248712,
+                "start": 52.6085,
+                "end": 53.0885,
+                "confidence": 0.9269519,
                 "punctuated_word": "Fantastic."
               },
               {
                 "word": "well",
                 "start": 53.0885,
                 "end": 53.328503,
-                "confidence": 0.9501525,
+                "confidence": 0.956738,
                 "punctuated_word": "Well,"
               },
               {
                 "word": "aditya",
                 "start": 53.328503,
                 "end": 53.5685,
-                "confidence": 0.72317517,
+                "confidence": 0.7165455,
                 "punctuated_word": "Aditya,"
               },
               {
                 "word": "thanks",
                 "start": 53.5685,
                 "end": 53.968502,
-                "confidence": 0.99244034,
+                "confidence": 0.99278724,
                 "punctuated_word": "thanks"
               },
               {
                 "word": "for",
                 "start": 53.968502,
                 "end": 54.2085,
-                "confidence": 0.99929076,
+                "confidence": 0.999287,
                 "punctuated_word": "for"
               },
               {
                 "word": "joining",
                 "start": 54.2085,
                 "end": 54.6085,
-                "confidence": 0.998471,
+                "confidence": 0.99853283,
                 "punctuated_word": "joining."
               },
               {
                 "word": "how",
                 "start": 54.6085,
                 "end": 54.6885,
-                "confidence": 0.99764603,
+                "confidence": 0.9978923,
                 "punctuated_word": "How"
               },
               {
                 "word": "are",
                 "start": 54.6885,
                 "end": 54.848503,
-                "confidence": 0.98531973,
+                "confidence": 0.98580766,
                 "punctuated_word": "are"
               },
               {
                 "word": "you",
                 "start": 54.848503,
                 "end": 55.0085,
-                "confidence": 0.99886537,
+                "confidence": 0.99896723,
                 "punctuated_word": "you"
               },
               {
                 "word": "doing",
                 "start": 55.0085,
                 "end": 55.5085,
-                "confidence": 0.9981307,
+                "confidence": 0.99821675,
                 "punctuated_word": "doing?"
               }
             ],
             "paragraphs": {
-              "transcript": "\nOh, just a second. Just a second. Yeah. No tagged up with it in a what couple of shades. No.\n\nWhat do you have pleasure? Sure. Okay. It's a solution. Taklutschen.\n\nOkay. Cool. Seems like we are good to go. Yeah. Fantastic.\n\nWell, Aditya, thanks for joining. How are you doing?",
+              "transcript": "\nOh, just a second. Just a second. Yeah. No. What do you have pleasure?\n\nSure. Okay. It's a solution. Taklutschen. Okay.\n\nCool. Seems like we are good to go. Yeah. Fantastic. Well, Aditya, thanks for joining.\n\nHow are you doing?",
               "paragraphs": [
                 {
                   "sentences": [
                     {
                       "text": "Oh, just a second.",
                       "start": 0.56,
-                      "end": 5.31
+                      "end": 5.22
                     },
                     {
                       "text": "Just a second.",
@@ -400,39 +323,34 @@
                     },
                     {
                       "text": "Yeah.",
-                      "start": 28.04,
-                      "end": 28.28
-                    },
-                    {
-                      "text": "No tagged up with it in a what couple of shades.",
-                      "start": 28.28,
-                      "end": 30.71
+                      "start": 28.12,
+                      "end": 28.62
                     },
                     {
                       "text": "No.",
                       "start": 40.165,
                       "end": 40.405003
-                    }
-                  ],
-                  "num_words": 20,
-                  "start": 0.56,
-                  "end": 40.405003
-                },
-                {
-                  "sentences": [
+                    },
                     {
                       "text": "What do you have pleasure?",
                       "start": 40.405003,
                       "end": 41.445
-                    },
+                    }
+                  ],
+                  "num_words": 14,
+                  "start": 0.56,
+                  "end": 41.445
+                },
+                {
+                  "sentences": [
                     {
                       "text": "Sure.",
                       "start": 41.445,
-                      "end": 41.845
+                      "end": 41.765003
                     },
                     {
                       "text": "Okay.",
-                      "start": 41.845,
+                      "start": 41.765003,
                       "end": 42.005
                     },
                     {
@@ -444,19 +362,19 @@
                       "text": "Taklutschen.",
                       "start": 44.725002,
                       "end": 45.225002
-                    }
-                  ],
-                  "num_words": 11,
-                  "start": 40.405003,
-                  "end": 45.225002
-                },
-                {
-                  "sentences": [
+                    },
                     {
                       "text": "Okay.",
                       "start": 47.125,
                       "end": 47.605003
-                    },
+                    }
+                  ],
+                  "num_words": 7,
+                  "start": 41.445,
+                  "end": 47.605003
+                },
+                {
+                  "sentences": [
                     {
                       "text": "Cool.",
                       "start": 47.605003,
@@ -470,33 +388,33 @@
                     {
                       "text": "Yeah.",
                       "start": 52.2085,
-                      "end": 52.2885
+                      "end": 52.6085
                     },
                     {
                       "text": "Fantastic.",
-                      "start": 52.2885,
-                      "end": 52.7885
-                    }
-                  ],
-                  "num_words": 11,
-                  "start": 47.125,
-                  "end": 52.7885
-                },
-                {
-                  "sentences": [
+                      "start": 52.6085,
+                      "end": 53.0885
+                    },
                     {
                       "text": "Well, Aditya, thanks for joining.",
                       "start": 53.0885,
                       "end": 54.6085
-                    },
+                    }
+                  ],
+                  "num_words": 15,
+                  "start": 47.605003,
+                  "end": 54.6085
+                },
+                {
+                  "sentences": [
                     {
                       "text": "How are you doing?",
                       "start": 54.6085,
                       "end": 55.5085
                     }
                   ],
-                  "num_words": 9,
-                  "start": 53.0885,
+                  "num_words": 4,
+                  "start": 54.6085,
                   "end": 55.5085
                 }
               ]
