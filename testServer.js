@@ -1,3 +1,5 @@
+
+//this is to test whether deepgram server is working or not
 const axios = require("axios");
 
 const testDeepgram = async () => {
